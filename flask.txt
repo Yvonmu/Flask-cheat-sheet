@@ -1,3 +1,4 @@
+flask pips:
 pip install virtualenv
 python -m venv myvenv
 myvenv\Scripts\activate
