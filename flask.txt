@@ -1,4 +1,4 @@
-flask pips:
+flask pips:9:46 AM 16/09/2020
 pip install virtualenv
 python -m venv myvenv
 myvenv\Scripts\activate
