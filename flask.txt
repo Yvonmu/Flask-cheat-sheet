@@ -16,4 +16,4 @@ https://wkhtmltopdf.org/downloads.html
 pip install pdfkit
 https://stripe.com/docs/payments/checkout/migration
 pip install stripe
-pip install all
+pip install all!
