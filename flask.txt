@@ -6,12 +6,12 @@ pip install flask-SQLALchemy
 pip install flask-wtf
 pip install flask-bcrypt
 pip install flask-uploads
-flaskuploads
+flaskuploads*(google search)
 pip install email_validator
 pip install flask-msearch
 pip install flask-login
 pip install flask-migrate
-https://wkhtmltopdf.org/downloads.html
+https://wkhtmltopdf.org/downloads.html(google search)
 pip install pdfkit
 https://stripe.com/docs/payments/checkout/migration
 pip install stripe
