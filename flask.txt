@@ -1,4 +1,3 @@
-flask pips:9:46 AM 16/09/2020
 pip install virtualenv
 python -m venv myvenv
 myvenv\Scripts\activate
@@ -16,3 +15,93 @@ https://wkhtmltopdf.org/downloads.html
 pip install pdfkit
 https://stripe.com/docs/payments/checkout/migration
 pip install stripe
+pip install flask-mail
+pip install flask-httpauth
+pip install httpie
+pip install coverage
+
+request object*
+form: A dictionary with all the form fields submitted with the request.
+args: A dictionary with all the arguments passed in the query string of the URL.
+values: A dictionary that combines the values in form and args. 
+cookies: A dictionary with all the cookies included in the request. 
+headers: A dictionary with all the HTTP headers included in the request. 
+files: A dictionary with all the file uploads included with the request.
+get_data(): Returns the buffered data from the request body. 
+get_json(): Returns a Python dictionary with the parsed JSON included in the body of the request. 
+blueprint: The name of the Flask blueprint that is handling the request. 
+endpoint: The name of the Flask endpoint that is handling the request. Flask uses the name of the view function as the endpoint name for a route. 
+method :The HTTP request method, such as GET or POST. 
+scheme: The URL scheme (http or https). 
+is_secure(): Returns True if the request came through a secure (HTTPS) connection. 
+host: The host defined in the request, including the port number if given by the client. 
+path: The path portion of the URL. 
+query_string: The query string portion of the URL, as a raw binary value. 
+full_path: The path and query string portions of the URL. 
+url: The complete URL requested by the client. 
+base_url: Same as url, but without the query string component. 
+remote_addr: The IP address of the client. 
+environ: The raw WSGI environment dictionary for the request. 
+
+ '/static/<filename>'
+url_for('static', filename='css/styles.css', _external=True) 
+would return http://localhost:5000/static/css/styles.css.
+
+sqlalchemy*
+filter(): Returns a new query that adds an additional filter to the original query 
+filter_by(): Returns a new query that adds an additional equality filter to the original query 
+limit(): Returns a new query that limits the number of results of the original query to the given number 
+offset(): Returns a new query that applies an offset into the list of results of the original query 
+order_by(): Returns a new query that sorts the results of the original query according to the given criteria 
+group_by(): Returns a new query that groups the results of the original query according to the given criteria
+
+sqlachemy executors*
+all(): Returns all the results of a query as a list 
+first(): Returns the first result of a query, or None if there are no results 
+first_or_404(): Returns the first result of a query, or aborts the request and sends a 404 error as the response if there are no results 
+get(): Returns the row that matches the given primary key, or None if no matching row is found 
+get_or_404(): Returns the row that matches the given primary key or, if the key is not found, aborts the request and sends a 404 error as the response 
+count(): Returns the result count of the query 
+paginate(): Returns a Pagination object that contains the specified range of results
+
+email*
+app.config['MAIL_SERVER'] = 'smtp.googlemail.com' 
+app.config['MAIL_PORT'] = 587 
+app.config['MAIL_USE_TLS'] = True 
+app.config['MAIL_USERNAME'] = os.environ.get('MAIL_USERNAME') 
+app.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD')
+
+pasword hashing*
+generate_password_hash(password, method='pbkdf2:sha256', salt_length=8):This function takes a plain-text password and returns the password hash as a string that can be stored in the user database
+check_password_hash(hash, password): This function takes a password hash previously stored in the database and the password entered by the user. A return value of True indicates that the user password is correct.
+
+flask login required items*
+is_authenticated: Must be True if the user has valid login credentials or False otherwise. 
+is_active: Must be True if the user is allowed to log in or False otherwise. A False value can be used for disabled accounts. 
+is_anonymous: Must always be False for regular users and True for a special user object that represents anonymous users. 
+get_id(): Must return a unique identifier for the user, encoded as a Unicode string.
+
+pagination object attributes(html)*
+items: The records in the current page 
+query: The source query that was paginated 
+page: The current page number 
+prev_num: The previous page number 
+next_num: The next page number 
+has_next: True if there is a next page 
+has_prev: True if there is a previous page 
+pages: The total number of pages for the query 
+per_page: The number of items per page 
+total: The total number of items returned by the query
+
+pagination object methods(html)*
+iter_pages(left_edge=2, left_current=2, right_current=5, right_edge=2): An iterator that returns the sequence of page numbers to display in a pagination widget. The list will have left_edge pages on the left side, left_current pages to the left of the current page, right_current pages to the right of the current page, and right_edge pages on the right side. For example, for page 50 of 100 this iterator configured with default values will return the following pages: 1, 2, None, 48, 49, 50, 51, 52, 53, 54, 55, None, 99, 100. A None value in the sequence indicates a gap in the sequence of pages. 
+prev(): A pagination object for the previous page. 
+next(): A pagination object for the next page.
+
+
+
+
+
+
+
+
