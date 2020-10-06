@@ -5,7 +5,10 @@ activate
 pip install virtualenv
 python -m venv myvenv
 myvenv\Scripts\activate.bat
+<<<<<<< HEAD
 //end or
+=======
+>>>>>>> c53d26e7956fb037ce37459fd052cb735d9f9487
 pip install flask
 pip install flask-SQLALchemy
 pip install flask-wtf
