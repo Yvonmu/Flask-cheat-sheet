@@ -1,6 +1,6 @@
 pip install virtualenv
 python -m venv myvenv
-myvenv\Scripts\activate
+myvenv\Scripts\activate.bat
 pip install flask
 pip install flask-SQLALchemy
 pip install flask-wtf
