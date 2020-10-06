@@ -1,17 +1,22 @@
+python -m venv .
+cd Scripts
+activate
+//or
 pip install virtualenv
 python -m venv myvenv
-myvenv\Scripts\activate
+myvenv\Scripts\activate.bat
+//end or
 pip install flask
 pip install flask-SQLALchemy
 pip install flask-wtf
 pip install flask-bcrypt
 pip install flask-uploads
-flaskuploads*(google search)
+flaskuploads*
 pip install email_validator
 pip install flask-msearch
 pip install flask-login
 pip install flask-migrate
-https://wkhtmltopdf.org/downloads.html(google search)
+https://wkhtmltopdf.org/downloads.html
 pip install pdfkit
 https://stripe.com/docs/payments/checkout/migration
 pip install stripe
