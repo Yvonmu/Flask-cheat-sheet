@@ -14,3 +14,8 @@ npm i react-router-dom
 npm i axios
 
 npm run build //create all your static files
+
+```Redux```
+npm install -g create-react-app
+npm i redux react-redux redux-thunk
+add REDUX_DEVTOOLS_EXTENSION in chrome
