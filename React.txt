@@ -1,0 +1,16 @@
+first add react developer tools to chrome
+install nodejs
+//
+npm install -g create-react-app
+npm uninstall -g create-react-app or yarn global remove create-react-ap
+//or
+npx create-react-app .
+//endor
+npm start //to run the server
+rce //to generate all function of files
+rfc // to generate header file
+npm i uuid //generating id
+npm i react-router-dom
+npm i axios
+
+npm run build //create all your static files
