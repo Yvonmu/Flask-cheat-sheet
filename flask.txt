@@ -5,10 +5,8 @@ activate
 pip install virtualenv
 python -m venv myvenv
 myvenv\Scripts\activate.bat
-<<<<<<< HEAD
 //end or
-=======
->>>>>>> c53d26e7956fb037ce37459fd052cb735d9f9487
+pip install pymongo
 pip install flask
 pip install flask-SQLALchemy
 pip install flask-wtf
@@ -27,6 +25,8 @@ pip install flask-mail
 pip install flask-httpauth
 pip install httpie
 pip install coverage
+pip install passlib
+python -c 'import os; print(os.urandom(16))' //to generate python secret key 
 
 request object*
 form: A dictionary with all the form fields submitted with the request.
