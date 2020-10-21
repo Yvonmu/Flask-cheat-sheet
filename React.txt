@@ -12,6 +12,7 @@ rfc // to generate header file
 npm i uuid //generating id
 npm i react-router-dom
 npm i axios
+npm i isomorphic-unfetch //import Fetch from 'isomorphic-unfetch'
 
 npm run build //create all your static files
 
@@ -19,3 +20,23 @@ npm run build //create all your static files
 npm install -g create-react-app
 npm i redux react-redux redux-thunk
 add REDUX_DEVTOOLS_EXTENSION in chrome
+
+```Next Js```
+npx create-next-app .
+npm run dev
+next dev //which starts Next.js in development mode
+next build //which builds the application for production usage
+next start //which starts a Next.js production server
+npm i typescript @types/node @types/react --save-dev
+npm install jsonwebtoken 
+npm i @types/jsonwebtoken --save-dev
+npm i sass
+
+```tailwind css```
+npm init -y
+npm install tailwindcss
+npx tailwindcss init
+npm install postcss-cli autoprefixer
+touch postcss.config.js
+npm run build
+
